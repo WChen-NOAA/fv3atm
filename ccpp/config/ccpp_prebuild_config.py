@@ -30,6 +30,7 @@ VARIABLE_DEFINITION_FILES = [
 TYPEDEFS_NEW_METADATA = {
     'ccpp_types' : {
         'ccpp_t' : 'cdata',
+        'MPI_Comm' : '',
         'ccpp_types' : '',
         },
     'machine' : {
@@ -55,16 +56,15 @@ TYPEDEFS_NEW_METADATA = {
         },
     'GFS_typedefs' : {
         'GFS_control_type'      : 'GFS_Control',
-        'GFS_data_type'         : 'GFS_Data(cdata%blk_no)',
-        'GFS_diag_type'         : 'GFS_Data(cdata%blk_no)%Intdiag',
-        'GFS_tbd_type'          : 'GFS_Data(cdata%blk_no)%Tbd',
-        'GFS_sfcprop_type'      : 'GFS_Data(cdata%blk_no)%Sfcprop',
-        'GFS_coupling_type'     : 'GFS_Data(cdata%blk_no)%Coupling',
-        'GFS_statein_type'      : 'GFS_Data(cdata%blk_no)%Statein',
-        'GFS_cldprop_type'      : 'GFS_Data(cdata%blk_no)%Cldprop',
-        'GFS_radtend_type'      : 'GFS_Data(cdata%blk_no)%Radtend',
-        'GFS_grid_type'         : 'GFS_Data(cdata%blk_no)%Grid',
-        'GFS_stateout_type'     : 'GFS_Data(cdata%blk_no)%Stateout',
+        'GFS_statein_type'      : 'GFS_Statein',
+        'GFS_stateout_type'     : 'GFS_Stateout',
+        'GFS_grid_type'         : 'GFS_Grid',
+        'GFS_tbd_type'          : 'GFS_Tbd',
+        'GFS_cldprop_type'      : 'GFS_Cldprop',
+        'GFS_sfcprop_type'      : 'GFS_Sfcprop',
+        'GFS_radtend_type'      : 'GFS_Radtend',
+        'GFS_coupling_type'     : 'GFS_Coupling',
+        'GFS_diag_type'         : 'GFS_Intdiag',
         'GFS_typedefs' : '',
         },
     }
@@ -195,6 +195,7 @@ SCHEME_FILES = [
     'physics/physics/SFC_Layer/UFS/sfc_nst_post.f90',
     'physics/physics/SFC_Models/Land/RUC/lsm_ruc.F90',
     'physics/physics/SFC_Models/SeaIce/CICE/sfc_cice.f',
+    'physics/physics/SFC_Models/Land/sfc_land.F90',
     'physics/physics/SFC_Models/Land/Noah/lsm_noah.f',
     'physics/physics/SFC_Models/Land/Noahmp/noahmpdrv.F90',
     'physics/physics/SFC_Models/Lake/Flake/flake_driver.F90',
