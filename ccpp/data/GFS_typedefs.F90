@@ -4056,7 +4056,8 @@ module GFS_typedefs
                                cplchm, cpllnd, cpllnd2atm, cpl_imp_mrg, cpl_imp_dbg,        &
                                rrfs_sd, use_cice_alb,                                       &
 #ifdef MULTI_GASES
-                               lsidea, do_wamphys, do_wamgfs_rad,do_wamipe,do_wamphys_diag, & 
+                               lsidea, use_med_flux,                                        &
+                               do_wamphys, do_wamgfs_rad,do_wamipe,do_wamphys_diag,         & 
 #else
                                lsidea, use_med_flux,                                        &
 #endif
