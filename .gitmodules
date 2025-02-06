@@ -1,7 +1,8 @@
 [submodule "atmos_cubed_sphere"]
    path = atmos_cubed_sphere
-   url = https://github.com/KevinViner-NOAA/GFDL_atmos_cubed_sphere
-   branch = wamhr4_grav
+#   url = https://github.com/KevinViner-NOAA/GFDL_atmos_cubed_sphere
+    url = https://github.com/WChen-NOAA/GFDL_atmos_cubed_sphere 
+    branch = wamhr4_grav
 #   branch = wamhr3
 #   branch = wam2ck
 #  url = https://github.com/KevinViner-NOAA/GFDL_atmos_cubed_sphere
