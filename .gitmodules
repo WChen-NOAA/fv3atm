@@ -4,6 +4,8 @@
 #  branch = dev/emc
   url = https://github.com/WChen-NOAA/GFDL_atmos_cubed_sphere
   branch = pdc_full
+#  url = https://github.com/NOAA-GFDL/GFDL_atmos_cubed_sphere
+#  branch = production/GFS.v17
 [submodule "ccpp/framework"]
   path = ccpp/framework
   url = https://github.com/NCAR/ccpp-framework
@@ -11,11 +13,11 @@
 [submodule "ccpp/physics"]
   path = ccpp/physics
   url = https://github.com/ufs-community/ccpp-physics
-  branch = ufs/dev
+  branch = production/GFS.v17
 [submodule "upp"]
   path = upp
   url = https://github.com/NOAA-EMC/UPP
-  branch = develop
+  branch = release/gfs_v17
 [submodule "mpas/MPAS-Model"]
   path = mpas/MPAS-Model
   url = https://github.com/ufs-community/MPAS-Model.git
